@@ -39,7 +39,7 @@ I already had instances created using terraform. The region in the terraform pro
 
 # Create a function 
 
-Using boto3, fetch all the instances running in this region. How do we get info from instances regardless of which instances they’re running? ***Ec2_client.describe_instances() ***
+Using boto3, fetch all the instances running in this region. How do we get info from instances regardless of which instances they’re running? ***Ec2_client.describe_instances()***
 and then saving it into a variable ("statuses"), and printing it. This execution will return reservations. 
 Reservations is the start/launching of instances; each reservation can have multiple instances. The state is nested in the instance, which is nested in the reservations. We need to access the state. We can do this using ***for loops***
 
